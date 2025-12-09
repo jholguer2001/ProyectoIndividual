@@ -1,0 +1,147 @@
+﻿@model POS.DTOs.SalesOrderSearchDTO
+
+@{
+    ViewData["Title"] = "Buscar Órdenes de Venta";
+}
+
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                    <h3 class="mb-0">
+                        <i class="fas fa-search"></i> Buscar Órdenes de Venta
+                    </h3>
+                    <a asp-action="Create" class="btn btn-success">
+                        <i class="fas fa-plus"></i> Nueva Orden
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col-md-8">
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                                <input type="text"
+                                       id="searchInput"
+                                       class="form-control"
+                                       placeholder="Buscar por número de orden o nombre de cliente..."
+                                       autofocus />
+                                <button type="button"
+                                        class="btn btn-primary"
+                                        id="btnSearch">
+                                    Buscar
+                                </button>
+                            </div>
+                            <small class="text-muted">
+                                <i class="fas fa-info-circle"></i>
+                                Puede buscar por número de orden o nombre de cliente
+                            </small>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-grid gap-2">
+                                <button type="button"
+                                        class="btn btn-outline-secondary"
+                                        id="btnClear">
+                                    <i class="fas fa-eraser"></i> Limpiar Búsqueda
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="searchResults">
+                        <div class="text-center text-muted py-5">
+                            <i class="fas fa-search fa-3x mb-3"></i>
+                            <h5>Ingrese criterios de búsqueda para encontrar órdenes de venta</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Search button click
+            $('#btnSearch').click(function() {
+                performSearch();
+            });
+
+            // Enter key on search input
+            $('#searchInput').keypress(function(e) {
+                if (e.which === 13) {
+                    performSearch();
+                }
+            });
+
+            // Clear button
+            $('#btnClear').click(function() {
+                $('#searchInput').val('');
+                $('#searchResults').html(`
+                    <div class="text-center text-muted py-5">
+                        <i class="fas fa-search fa-3x mb-3"></i>
+                        <h5>Ingrese criterios de búsqueda para encontrar órdenes de venta</h5>
+                    </div>
+                `);
+            });
+
+            // Auto-search with debounce
+            let searchTimeout;
+            $('#searchInput').on('input', function() {
+                clearTimeout(searchTimeout);
+                const searchTerm = $(this).val();
+                if (searchTerm.length >= 2) {
+                    searchTimeout = setTimeout(() => performSearch(), 800);
+                }
+            });
+        });
+
+        function performSearch() {
+            const searchTerm = $('#searchInput').val();
+            searchOrders(searchTerm, 1);
+        }
+
+        function searchOrders(searchTerm, pageNumber) {
+            console.log('Buscando órdenes:', searchTerm, 'Página:', pageNumber);
+
+            $.ajax({
+                url: '@Url.Action("SearchOrders", "SalesOrder")',
+                type: 'GET',
+                data: {
+                    searchTerm: searchTerm || '',
+                    pageNumber: pageNumber
+                },
+                beforeSend: function() {
+                    $('#searchResults').html(`
+                        <div class="text-center py-5">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Cargando...</span>
+                            </div>
+                            <p class="mt-3">Buscando...</p>
+                        </div>
+                    `);
+                },
+                success: function(response) {
+                    console.log('Búsqueda exitosa');
+                    $('#searchResults').html(response);
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error de búsqueda:', error);
+                    console.error('Estado:', xhr.status);
+                    console.error('Respuesta:', xhr.responseText);
+
+                    $('#searchResults').html(`
+                        <div class="alert alert-danger">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            Error al buscar órdenes de venta: ${error}
+                            <br><small>Estado: ${xhr.status}</small>
+                        </div>
+                    `);
+                }
+            });
+        }
+    </script>
+}

@@ -1,0 +1,233 @@
+﻿@* File: Views/SalesOrder/Create.cshtml *@
+@model POS.DTOs.CreateSalesOrderDTO
+
+@{
+    ViewData["Title"] = "Crear Orden de Venta";
+}
+
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0">
+                        <i class="fas fa-shopping-cart"></i> Crear Orden de Venta
+                    </h3>
+                </div>
+                <div class="card-body">
+                    @if (TempData["ErrorMessage"] != null)
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <i class="fas fa-exclamation-circle"></i> @TempData["ErrorMessage"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    }
+
+                    <form id="salesOrderForm" asp-action="Create" method="post">
+                        <input type="hidden" asp-for="CustomerId" id="customerId" />
+
+                        <!-- Order Header -->
+                        <div class="card mb-4 border-primary">
+                            <div class="card-body bg-light">
+                                <div class="row align-items-center">
+                                    <div class="col-md-4">
+                                        <h4 class="mb-0">
+                                            <i class="fas fa-file-invoice text-primary"></i>
+                                            <strong>Orden de Venta:</strong>
+                                            <span id="orderNumberDisplay" class="text-muted">Cargando...</span>
+                                        </h4>
+                                        <p class="mb-0 mt-2">
+                                            <i class="fas fa-calendar-alt text-primary"></i>
+                                            <strong>Fecha:</strong>
+                                            <span id="orderDate" class="text-muted">Cargando...</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-8 text-end">
+                                        <h5 class="mb-1 text-primary"><i class="fas fa-store"></i> <strong>TechnoShop Ecuador</strong></h5>
+                                        <p class="mb-0 small"><i class="fas fa-map-marker-alt"></i> Av. 9 de Octubre 123 y Malecón, Guayaquil, Ecuador</p>
+                                        <p class="mb-0 small"><i class="fas fa-id-card"></i> RUC: 0992345678001 | <i class="fas fa-phone"></i> (04) 2345-678</p>
+                                        <p class="mb-0 small"><i class="fab fa-whatsapp"></i> +593 99 234 5678 | <i class="fas fa-envelope"></i> ventas@technoshop.ec</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Customer Section -->
+                        <div class="card mb-4">
+                            <div class="card-header bg-info text-white">
+                                <h5 class="mb-0">Información del Cliente</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label fw-bold">Cliente <span class="text-danger">*</span></label>
+                                            <div class="input-group">
+                                                <input type="text" id="customerDisplay" class="form-control"
+                                                       placeholder="Haga clic en buscar para seleccionar cliente" readonly />
+                                                <button type="button" class="btn btn-primary" id="btnSearchCustomer">
+                                                    <i class="fas fa-search"></i> Buscar
+                                                </button>
+                                            </div>
+                                            <span asp-validation-for="CustomerId" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <!-- Aquí insertaremos la nueva tarjeta -->
+                                    <div class="col-md-6" id="newCustomerCardWrapper"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Products Section -->
+                        <div class="card mb-4">
+                            <div class="card-header bg-success text-white d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">Artículos de la Orden</h5>
+                                <button type="button" class="btn btn-light btn-sm" id="btnAddProduct">
+                                    <i class="fas fa-plus"></i> Agregar Producto
+                                </button>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-hover" id="orderItemsTable">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th style="width: 15%;">Código</th>
+                                                <th style="width: 30%;">Producto</th>
+                                                <th style="width: 12%;">Precio Unit.</th>
+                                                <th style="width: 12%;">Cantidad</th>
+                                                <th style="width: 15%;">Total Línea</th>
+                                                <th style="width: 16%;">Acciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="orderItemsBody">
+                                            <tr id="emptyRow">
+                                                <td colspan="6" class="text-center text-muted">
+                                                    <i class="fas fa-inbox"></i> No se han agregado productos aún
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <span asp-validation-for="OrderDetails" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <!-- Totals Section -->
+                        <div class="card mb-4">
+                            <div class="card-header bg-warning">
+                                <h5 class="mb-0">Resumen de Orden</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="mb-3">
+                                            <label asp-for="Notes" class="form-label">Notas (Opcional)</label>
+                                            <textarea asp-for="Notes" class="form-control" rows="3"
+                                                      placeholder="Agregue notas adicionales aquí..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <table class="table table-sm">
+                                            <tr>
+                                                <th>Subtotal:</th>
+                                                <td class="text-end fw-bold" id="subtotalDisplay">$0.00</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Impuesto (15%):</th>
+                                                <td class="text-end fw-bold" id="taxDisplay">$0.00</td>
+                                            </tr>
+                                            <tr class="table-primary">
+                                                <th>Total:</th>
+                                                <td class="text-end fw-bold fs-5" id="totalDisplay">$0.00</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="d-flex justify-content-end gap-2">
+                            <a asp-action="Search" class="btn btn-secondary">
+                                <i class="fas fa-times"></i> Cancelar
+                            </a>
+                            <button type="submit" class="btn btn-success btn-lg" id="btnSubmitOrder">
+                                <i class="fas fa-save"></i> Crear Orden
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Customer Search Modal -->
+<div class="modal fade" id="customerSearchModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">
+                    <i class="fas fa-users"></i> Buscar Cliente
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <input type="text" id="customerSearchInput" class="form-control"
+                               placeholder="Buscar por nombre, cédula o email..."
+                               autocomplete="off" />
+                    </div>
+                    <small class="text-muted">
+                        <i class="fas fa-info-circle"></i>
+                        Comience a escribir para filtrar resultados en tiempo real
+                    </small>
+                </div>
+                <div id="customerSearchResults">
+                    <!-- Results will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Product Search Modal -->
+<div class="modal fade" id="productSearchModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title">
+                    <i class="fas fa-box"></i> Buscar Producto
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <input type="text" id="productSearchInput" class="form-control"
+                               placeholder="Buscar por código o nombre..."
+                               autocomplete="off" />
+                    </div>
+                    <small class="text-muted">
+                        <i class="fas fa-info-circle"></i>
+                        Comience a escribir para filtrar resultados en tiempo real
+                    </small>
+                </div>
+                <div id="productSearchResults">
+                    <!-- Results will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/sales-order-create.js"></script>
+}

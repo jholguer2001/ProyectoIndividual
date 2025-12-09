@@ -1,0 +1,371 @@
+﻿@model POS.DTOs.SalesOrderViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factura - @Model.OrderNumber</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        @@media print {
+            .no-print {
+                display: none;
+            }
+
+            body {
+                margin: 0;
+                padding: 10px;
+            }
+
+            @@page {
+                margin: 0.6cm;
+                size: letter;
+            }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 10px;
+            color: #333;
+            line-height: 1.4;
+        }
+
+        .invoice-header {
+            border-bottom: 2px solid #0d6efd;
+            padding-bottom: 10px;
+            margin-bottom: 12px;
+        }
+
+        .invoice-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #0d6efd;
+            letter-spacing: 1.5px;
+            margin-bottom: 3px;
+        }
+
+        .company-info {
+            text-align: right;
+            font-size: 9px;
+            line-height: 1.5;
+        }
+
+            .company-info h4 {
+                font-size: 1.15rem;
+                margin-bottom: 5px;
+                color: #0d6efd;
+                font-weight: 700;
+            }
+
+            .company-info p {
+                margin-bottom: 2px;
+            }
+
+        .section-title {
+            background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+            color: white;
+            padding: 5px 12px;
+            margin-top: 10px;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .customer-box {
+            background-color: #f8f9fa;
+            padding: 10px 12px;
+            border-left: 3px solid #0d6efd;
+            border-radius: 3px;
+        }
+
+            .customer-box p {
+                margin-bottom: 3px;
+                font-size: 9px;
+            }
+
+        .table {
+            font-size: 9px;
+            margin-bottom: 10px;
+        }
+
+            .table thead th {
+                background-color: #343a40;
+                color: white;
+                padding: 6px 8px;
+                font-weight: 600;
+                border: none;
+                text-transform: uppercase;
+                font-size: 9px;
+                letter-spacing: 0.3px;
+            }
+
+            .table tbody td {
+                padding: 5px 8px;
+                vertical-align: middle;
+                border-bottom: 1px solid #dee2e6;
+            }
+
+            .table tbody tr:last-child td {
+                border-bottom: 2px solid #343a40;
+            }
+
+            .table tbody tr:hover {
+                background-color: #f8f9fa;
+            }
+
+            /* Alineaciones específicas para la tabla de productos */
+            .table thead th.col-code,
+            .table tbody td.col-code {
+                text-align: left;
+                width: 12%;
+            }
+
+            .table thead th.col-description,
+            .table tbody td.col-description {
+                text-align: left;
+                width: 45%;
+            }
+
+            .table thead th.col-price,
+            .table tbody td.col-price {
+                text-align: right;
+                width: 15%;
+                font-family: 'Courier New', monospace;
+            }
+
+            .table thead th.col-quantity,
+            .table tbody td.col-quantity {
+                text-align: center;
+                width: 8%;
+                font-weight: 600;
+            }
+
+            .table thead th.col-total,
+            .table tbody td.col-total {
+                text-align: right;
+                width: 20%;
+                font-family: 'Courier New', monospace;
+                font-weight: 600;
+            }
+
+        .totals-table {
+            background-color: #fff;
+            font-size: 10px;
+            margin-bottom: 0;
+        }
+
+            .totals-table th {
+                text-align: left;
+                padding: 6px 10px;
+                font-weight: 600;
+                background-color: #f8f9fa;
+                border: 1px solid #dee2e6;
+            }
+
+            .totals-table td {
+                text-align: right;
+                padding: 6px 10px;
+                font-family: 'Courier New', monospace;
+                border: 1px solid #dee2e6;
+                font-weight: 500;
+            }
+
+        .total-row {
+            background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%) !important;
+            color: white !important;
+        }
+
+            .total-row th,
+            .total-row td {
+                font-size: 1.1rem;
+                font-weight: 700;
+                padding: 8px 10px;
+                border: none !important;
+            }
+
+        .invoice-header p {
+            margin-bottom: 3px;
+            line-height: 1.4;
+        }
+
+        .badge {
+            font-size: 9px;
+            padding: 3px 8px;
+            font-weight: 600;
+        }
+
+        .notes-box {
+            background-color: #fff3cd;
+            border-left: 3px solid #ffc107;
+            padding: 8px 12px;
+            border-radius: 3px;
+            font-size: 9px;
+            margin-top: 10px;
+        }
+
+        .invoice-footer {
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 2px solid #dee2e6;
+            text-align: center;
+            color: #6c757d;
+        }
+
+            .invoice-footer p {
+                margin-bottom: 3px;
+            }
+
+        .info-label {
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .mb-3 {
+            margin-bottom: 10px !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Print Button -->
+        <div class="no-print mb-3">
+            <button onclick="window.print()" class="btn btn-primary btn-sm">
+                <i class="fas fa-print"></i> Imprimir Factura
+            </button>
+            <button onclick="window.close()" class="btn btn-secondary btn-sm">
+                <i class="fas fa-times"></i> Cerrar
+            </button>
+        </div>
+
+        <!-- Invoice Header -->
+        <div class="invoice-header">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="invoice-title">FACTURA</div>
+                    <p class="mb-0"><span class="info-label">Número de Orden:</span> @Model.OrderNumber</p>
+                    <p class="mb-0"><span class="info-label">Fecha:</span> @Model.OrderDate.ToString("dd/MM/yyyy hh:mm tt")</p>
+                    <p class="mb-0"><span class="info-label">Estado:</span> <span class="badge bg-success">@Model.Status</span></p>
+                </div>
+                <div class="col-md-6 company-info">
+                    <h4>TechnoShop Ecuador</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. 9 de Octubre 123 y Malecón, Guayaquil</p>
+                    <p><i class="fas fa-id-card"></i> RUC: 0992345678001</p>
+                    <p><i class="fas fa-phone"></i> (04) 2345-678 | <i class="fab fa-whatsapp"></i> +593 99 234 5678</p>
+                    <p><i class="fas fa-envelope"></i> ventas@technoshop.ec</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bill To -->
+        <div class="section-title">
+            <i class="fas fa-user"></i> Datos del Cliente
+        </div>
+        <div class="customer-box mb-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <p><span class="info-label">Cliente:</span> @Model.CustomerName</p>
+                    <p><span class="info-label">Cédula:</span> @Model.CustomerIdentification</p>
+                    <p><span class="info-label">Dirección:</span> @(Model.CustomerAddress ?? "N/A")</p>
+                </div>
+                <div class="col-md-6">
+                    <p><span class="info-label">Email:</span> @(Model.CustomerEmail ?? "N/A")</p>
+                    <p><span class="info-label">Teléfono:</span> @(Model.CustomerPhone ?? "N/A")</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Items -->
+        <div class="section-title">
+            <i class="fas fa-box"></i> Detalle de Productos
+        </div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th class="col-code">Código</th>
+                    <th class="col-description">Descripción</th>
+                    <th class="col-price">Precio Unit.</th>
+                    <th class="col-quantity">Cant.</th>
+                    <th class="col-total">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var detail in Model.OrderDetails)
+                {
+                    <tr>
+                        <td class="col-code">@detail.ProductCode</td>
+                        <td class="col-description">@detail.ProductName</td>
+                        <td class="col-price">$@detail.UnitPrice.ToString("N2")</td>
+                        <td class="col-quantity">@detail.Quantity</td>
+                        <td class="col-total">$@detail.LineTotal.ToString("N2")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <!-- Totals and Notes Row -->
+        <div class="row">
+            @if (!string.IsNullOrEmpty(Model.Notes))
+            {
+                <div class="col-md-7">
+                    <div class="notes-box">
+                        <p class="mb-0"><span class="info-label"><i class="fas fa-sticky-note"></i> Observaciones:</span></p>
+                        <p class="mb-0 mt-1">@Model.Notes</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <table class="table totals-table">
+                        <tr>
+                            <th>Subtotal:</th>
+                            <td>$@Model.Subtotal.ToString("N2")</td>
+                        </tr>
+                        <tr>
+                            <th>IVA (15%):</th>
+                            <td>$@Model.TaxAmount.ToString("N2")</td>
+                        </tr>
+                        <tr class="total-row">
+                            <th>TOTAL:</th>
+                            <td>$@Model.TotalAmount.ToString("N2")</td>
+                        </tr>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="col-md-12 d-flex justify-content-end">
+                    <table class="table totals-table" style="width: 320px;">
+                        <tr>
+                            <th>Subtotal:</th>
+                            <td>$@Model.Subtotal.ToString("N2")</td>
+                        </tr>
+                        <tr>
+                            <th>IVA (15%):</th>
+                            <td>$@Model.TaxAmount.ToString("N2")</td>
+                        </tr>
+                        <tr class="total-row">
+                            <th>TOTAL A PAGAR:</th>
+                            <td>$@Model.TotalAmount.ToString("N2")</td>
+                        </tr>
+                    </table>
+                </div>
+            }
+        </div>
+
+        <!-- Footer -->
+        <div class="invoice-footer">
+            <p style="font-size: 11px; font-weight: 600; color: #0d6efd;">¡Gracias por su compra!</p>
+            <p style="font-size: 9px;">Esta es una factura generada por computadora y no requiere firma.</p>
+            <p style="font-size: 9px;">Para consultas o reclamos: ventas@technoshop.ec | WhatsApp: +593 99 234 5678</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

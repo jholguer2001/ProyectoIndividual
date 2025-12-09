@@ -1,0 +1,758 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\wwwroot\\js\\sales-order-create.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\wwwroot\\js\\sales-order-create.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\views\\salesorder\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\views\\salesorder\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\views\\salesorder\\printinvoice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\views\\salesorder\\printinvoice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA66C86-4F0E-476F-B046-58326E367F08}|POS.DataAccess\\POS.DataAccess.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.dataaccess\\repositories\\salesorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA66C86-4F0E-476F-B046-58326E367F08}|POS.DataAccess\\POS.DataAccess.csproj|solutionrelative:pos.dataaccess\\repositories\\salesorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\controllers\\salesordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\controllers\\salesordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0C4707-9972-4D1E-AB1B-D2BF8C3C7B27}|POS.Services\\POS.Services.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.services\\salesorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB0C4707-9972-4D1E-AB1B-D2BF8C3C7B27}|POS.Services\\POS.Services.csproj|solutionrelative:pos.services\\salesorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0C4707-9972-4D1E-AB1B-D2BF8C3C7B27}|POS.Services\\POS.Services.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.services\\interfaces\\isalesorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB0C4707-9972-4D1E-AB1B-D2BF8C3C7B27}|POS.Services\\POS.Services.csproj|solutionrelative:pos.services\\interfaces\\isalesorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA66C86-4F0E-476F-B046-58326E367F08}|POS.DataAccess\\POS.DataAccess.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.dataaccess\\repositories\\isalesorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA66C86-4F0E-476F-B046-58326E367F08}|POS.DataAccess\\POS.DataAccess.csproj|solutionrelative:pos.dataaccess\\repositories\\isalesorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\views\\salesorder\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\views\\salesorder\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\views\\salesorder\\_searchordersresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\views\\salesorder\\_searchordersresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\views\\customer\\_customersearchresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\views\\customer\\_customersearchresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\views\\product\\_productsearchresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\views\\product\\_productsearchresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0C4707-9972-4D1E-AB1B-D2BF8C3C7B27}|POS.Services\\POS.Services.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB0C4707-9972-4D1E-AB1B-D2BF8C3C7B27}|POS.Services\\POS.Services.csproj|solutionrelative:pos.services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0C4707-9972-4D1E-AB1B-D2BF8C3C7B27}|POS.Services\\POS.Services.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB0C4707-9972-4D1E-AB1B-D2BF8C3C7B27}|POS.Services\\POS.Services.csproj|solutionrelative:pos.services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA66C86-4F0E-476F-B046-58326E367F08}|POS.DataAccess\\POS.DataAccess.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.dataaccess\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA66C86-4F0E-476F-B046-58326E367F08}|POS.DataAccess\\POS.DataAccess.csproj|solutionrelative:pos.dataaccess\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016FE386-CBEC-44DB-9876-396BCF6EBF3C}|POS.Entities\\POS.Entities.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.entities\\salesorderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{016FE386-CBEC-44DB-9876-396BCF6EBF3C}|POS.Entities\\POS.Entities.csproj|solutionrelative:pos.entities\\salesorderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\views\\salesorder\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\views\\salesorder\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA66C86-4F0E-476F-B046-58326E367F08}|POS.DataAccess\\POS.DataAccess.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.dataaccess\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA66C86-4F0E-476F-B046-58326E367F08}|POS.DataAccess\\POS.DataAccess.csproj|solutionrelative:pos.dataaccess\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A33343E2-3049-4CBC-B0FA-16FB79B780F1}|POS.DTOs\\POS.DTOs.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.dtos\\salesorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A33343E2-3049-4CBC-B0FA-16FB79B780F1}|POS.DTOs\\POS.DTOs.csproj|solutionrelative:pos.dtos\\salesorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016FE386-CBEC-44DB-9876-396BCF6EBF3C}|POS.Entities\\POS.Entities.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.entities\\salesorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{016FE386-CBEC-44DB-9876-396BCF6EBF3C}|POS.Entities\\POS.Entities.csproj|solutionrelative:pos.entities\\salesorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA66C86-4F0E-476F-B046-58326E367F08}|POS.DataAccess\\POS.DataAccess.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.dataaccess\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA66C86-4F0E-476F-B046-58326E367F08}|POS.DataAccess\\POS.DataAccess.csproj|solutionrelative:pos.dataaccess\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016FE386-CBEC-44DB-9876-396BCF6EBF3C}|POS.Entities\\POS.Entities.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{016FE386-CBEC-44DB-9876-396BCF6EBF3C}|POS.Entities\\POS.Entities.csproj|solutionrelative:pos.entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0C4707-9972-4D1E-AB1B-D2BF8C3C7B27}|POS.Services\\POS.Services.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.services\\interfaces\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB0C4707-9972-4D1E-AB1B-D2BF8C3C7B27}|POS.Services\\POS.Services.csproj|solutionrelative:pos.services\\interfaces\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0C4707-9972-4D1E-AB1B-D2BF8C3C7B27}|POS.Services\\POS.Services.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB0C4707-9972-4D1E-AB1B-D2BF8C3C7B27}|POS.Services\\POS.Services.csproj|solutionrelative:pos.services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA66C86-4F0E-476F-B046-58326E367F08}|POS.DataAccess\\POS.DataAccess.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.dataaccess\\repositories\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA66C86-4F0E-476F-B046-58326E367F08}|POS.DataAccess\\POS.DataAccess.csproj|solutionrelative:pos.dataaccess\\repositories\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA66C86-4F0E-476F-B046-58326E367F08}|POS.DataAccess\\POS.DataAccess.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.dataaccess\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA66C86-4F0E-476F-B046-58326E367F08}|POS.DataAccess\\POS.DataAccess.csproj|solutionrelative:pos.dataaccess\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA66C86-4F0E-476F-B046-58326E367F08}|POS.DataAccess\\POS.DataAccess.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.dataaccess\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA66C86-4F0E-476F-B046-58326E367F08}|POS.DataAccess\\POS.DataAccess.csproj|solutionrelative:pos.dataaccess\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDA66C86-4F0E-476F-B046-58326E367F08}|POS.DataAccess\\POS.DataAccess.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.dataaccess\\posdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDA66C86-4F0E-476F-B046-58326E367F08}|POS.DataAccess\\POS.DataAccess.csproj|solutionrelative:pos.dataaccess\\posdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB0C4707-9972-4D1E-AB1B-D2BF8C3C7B27}|POS.Services\\POS.Services.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.services\\validators\\ecuadorianidvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB0C4707-9972-4D1E-AB1B-D2BF8C3C7B27}|POS.Services\\POS.Services.csproj|solutionrelative:pos.services\\validators\\ecuadorianidvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A33343E2-3049-4CBC-B0FA-16FB79B780F1}|POS.DTOs\\POS.DTOs.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.dtos\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A33343E2-3049-4CBC-B0FA-16FB79B780F1}|POS.DTOs\\POS.DTOs.csproj|solutionrelative:pos.dtos\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016FE386-CBEC-44DB-9876-396BCF6EBF3C}|POS.Entities\\POS.Entities.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{016FE386-CBEC-44DB-9876-396BCF6EBF3C}|POS.Entities\\POS.Entities.csproj|solutionrelative:pos.entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{016FE386-CBEC-44DB-9876-396BCF6EBF3C}|POS.Entities\\POS.Entities.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{016FE386-CBEC-44DB-9876-396BCF6EBF3C}|POS.Entities\\POS.Entities.csproj|solutionrelative:pos.entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\wwwroot\\js\\debug-order.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\wwwroot\\js\\debug-order.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|c:\\users\\administrador\\desktop\\possystem\\possystem\\pos.web\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{24E3CCC4-2349-45E8-984F-73737AAB0A02}|POS.Web\\POS.Web.csproj|solutionrelative:pos.web\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SalesOrderController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Controllers\\SalesOrderController.cs",
+              "RelativeDocumentMoniker": "POS.Web\\Controllers\\SalesOrderController.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Controllers\\SalesOrderController.cs",
+              "RelativeToolTip": "POS.Web\\Controllers\\SalesOrderController.cs",
+              "ViewState": "AgIAANMAAAAAAAAAAAAAAO4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:26:06.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SalesOrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DataAccess\\Repositories\\SalesOrderRepository.cs",
+              "RelativeDocumentMoniker": "POS.DataAccess\\Repositories\\SalesOrderRepository.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DataAccess\\Repositories\\SalesOrderRepository.cs",
+              "RelativeToolTip": "POS.DataAccess\\Repositories\\SalesOrderRepository.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAqwFoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:11:48.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "sales-order-create.js",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\wwwroot\\js\\sales-order-create.js",
+              "RelativeDocumentMoniker": "POS.Web\\wwwroot\\js\\sales-order-create.js",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\wwwroot\\js\\sales-order-create.js",
+              "RelativeToolTip": "POS.Web\\wwwroot\\js\\sales-order-create.js",
+              "ViewState": "AgIAAJMCAAAAAAAAAAAiwNACAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-09T02:32:39.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\SalesOrder\\Create.cshtml",
+              "RelativeDocumentMoniker": "POS.Web\\Views\\SalesOrder\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\SalesOrder\\Create.cshtml",
+              "RelativeToolTip": "POS.Web\\Views\\SalesOrder\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAOgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-09T02:30:23.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PrintInvoice.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\SalesOrder\\PrintInvoice.cshtml",
+              "RelativeDocumentMoniker": "POS.Web\\Views\\SalesOrder\\PrintInvoice.cshtml",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\SalesOrder\\PrintInvoice.cshtml",
+              "RelativeToolTip": "POS.Web\\Views\\SalesOrder\\PrintInvoice.cshtml",
+              "ViewState": "AgIAAEsBAAAAAAAAAAAqwHIBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-09T02:40:33.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ISalesOrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DataAccess\\Repositories\\ISalesOrderRepository.cs",
+              "RelativeDocumentMoniker": "POS.DataAccess\\Repositories\\ISalesOrderRepository.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DataAccess\\Repositories\\ISalesOrderRepository.cs",
+              "RelativeToolTip": "POS.DataAccess\\Repositories\\ISalesOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:11:20.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ISalesOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Services\\Interfaces\\ISalesOrderService.cs",
+              "RelativeDocumentMoniker": "POS.Services\\Interfaces\\ISalesOrderService.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Services\\Interfaces\\ISalesOrderService.cs",
+              "RelativeToolTip": "POS.Services\\Interfaces\\ISalesOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:15:29.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_CustomerSearchResults.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\Customer\\_CustomerSearchResults.cshtml",
+              "RelativeDocumentMoniker": "POS.Web\\Views\\Customer\\_CustomerSearchResults.cshtml",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\Customer\\_CustomerSearchResults.cshtml",
+              "RelativeToolTip": "POS.Web\\Views\\Customer\\_CustomerSearchResults.cshtml",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAkwFwAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-09T02:34:42.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "POS.Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\appsettings.json",
+              "RelativeToolTip": "POS.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-09T00:58:39.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SalesOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Services\\SalesOrderService.cs",
+              "RelativeDocumentMoniker": "POS.Services\\SalesOrderService.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Services\\SalesOrderService.cs",
+              "RelativeToolTip": "POS.Services\\SalesOrderService.cs",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAAL4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:19:12.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_SearchOrdersResults.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\SalesOrder\\_SearchOrdersResults.cshtml",
+              "RelativeDocumentMoniker": "POS.Web\\Views\\SalesOrder\\_SearchOrdersResults.cshtml",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\SalesOrder\\_SearchOrdersResults.cshtml",
+              "RelativeToolTip": "POS.Web\\Views\\SalesOrder\\_SearchOrdersResults.cshtml",
+              "ViewState": "AgIAADEAAAAAAAAAAAAkwFgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-09T02:38:06.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\SalesOrder\\Details.cshtml",
+              "RelativeDocumentMoniker": "POS.Web\\Views\\SalesOrder\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\SalesOrder\\Details.cshtml",
+              "RelativeToolTip": "POS.Web\\Views\\SalesOrder\\Details.cshtml",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAAAGIAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-09T02:38:52.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_ProductSearchResults.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\Product\\_ProductSearchResults.cshtml",
+              "RelativeDocumentMoniker": "POS.Web\\Views\\Product\\_ProductSearchResults.cshtml",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\Product\\_ProductSearchResults.cshtml",
+              "RelativeToolTip": "POS.Web\\Views\\Product\\_ProductSearchResults.cshtml",
+              "ViewState": "AgIAAGMAAAAAAAAAAADwv3YAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-09T02:35:43.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "POS.Web\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "POS.Web\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAGYBAAAAAAAAAADwv44BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-09T02:45:08.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "POS.Web\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "POS.Web\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:28:30.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "POS.Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Services\\ProductService.cs",
+              "RelativeToolTip": "POS.Services\\ProductService.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAUwDYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:18:44.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Services\\Interfaces\\IProductService.cs",
+              "RelativeDocumentMoniker": "POS.Services\\Interfaces\\IProductService.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Services\\Interfaces\\IProductService.cs",
+              "RelativeToolTip": "POS.Services\\Interfaces\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:14:23.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DataAccess\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "POS.DataAccess\\Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DataAccess\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "POS.DataAccess\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAABMAAAAAOjMzMzMbwCQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:10:16.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SalesOrderDetail.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Entities\\SalesOrderDetail.cs",
+              "RelativeDocumentMoniker": "POS.Entities\\SalesOrderDetail.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Entities\\SalesOrderDetail.cs",
+              "RelativeToolTip": "POS.Entities\\SalesOrderDetail.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAYwCAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T01:53:32.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\SalesOrder\\Search.cshtml",
+              "RelativeDocumentMoniker": "POS.Web\\Views\\SalesOrder\\Search.cshtml",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\SalesOrder\\Search.cshtml",
+              "RelativeToolTip": "POS.Web\\Views\\SalesOrder\\Search.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-09T02:39:28.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DataAccess\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "POS.DataAccess\\Repositories\\Repository.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DataAccess\\Repositories\\Repository.cs",
+              "RelativeToolTip": "POS.DataAccess\\Repositories\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:05:11.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SalesOrderDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DTOs\\SalesOrderDTO.cs",
+              "RelativeDocumentMoniker": "POS.DTOs\\SalesOrderDTO.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DTOs\\SalesOrderDTO.cs",
+              "RelativeToolTip": "POS.DTOs\\SalesOrderDTO.cs",
+              "ViewState": "AgIAAFUAAACAMzMzM7M8wAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T01:58:21.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "POS.Web\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "POS.Web\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:27:37.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "POS.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "POS.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:26:08.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "POS.Web\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "POS.Web\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T04:43:15.098Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "POS.Web\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "POS.Web\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T04:58:23.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "POS.Web\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "POS.Web\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-14T04:43:36.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "POS.Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "POS.Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAAwKoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-09T02:42:33.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SalesOrder.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Entities\\SalesOrder.cs",
+              "RelativeDocumentMoniker": "POS.Entities\\SalesOrder.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Entities\\SalesOrder.cs",
+              "RelativeToolTip": "POS.Entities\\SalesOrder.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwB4AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T01:52:34.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Program.cs",
+              "RelativeDocumentMoniker": "POS.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Program.cs",
+              "RelativeToolTip": "POS.Web\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:22:46.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DataAccess\\Repositories\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "POS.DataAccess\\Repositories\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DataAccess\\Repositories\\IProductRepository.cs",
+              "RelativeToolTip": "POS.DataAccess\\Repositories\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:09:50.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Entities\\Product.cs",
+              "RelativeDocumentMoniker": "POS.Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Entities\\Product.cs",
+              "RelativeToolTip": "POS.Entities\\Product.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAzwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T01:51:13.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Services\\Interfaces\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "POS.Services\\Interfaces\\ICustomerService.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Services\\Interfaces\\ICustomerService.cs",
+              "RelativeToolTip": "POS.Services\\Interfaces\\ICustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:13:27.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "POS.Services\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Services\\CustomerService.cs",
+              "RelativeToolTip": "POS.Services\\CustomerService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:17:52.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DataAccess\\Repositories\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "POS.DataAccess\\Repositories\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DataAccess\\Repositories\\ICustomerRepository.cs",
+              "RelativeToolTip": "POS.DataAccess\\Repositories\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:06:20.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DataAccess\\Repositories\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "POS.DataAccess\\Repositories\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DataAccess\\Repositories\\CustomerRepository.cs",
+              "RelativeToolTip": "POS.DataAccess\\Repositories\\CustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:07:39.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DataAccess\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "POS.DataAccess\\Repositories\\IRepository.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DataAccess\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "POS.DataAccess\\Repositories\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:03:34.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "POSDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DataAccess\\POSDbContext.cs",
+              "RelativeDocumentMoniker": "POS.DataAccess\\POSDbContext.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DataAccess\\POSDbContext.cs",
+              "RelativeToolTip": "POS.DataAccess\\POSDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:02:12.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "EcuadorianIdValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Services\\Validators\\EcuadorianIdValidator.cs",
+              "RelativeDocumentMoniker": "POS.Services\\Validators\\EcuadorianIdValidator.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Services\\Validators\\EcuadorianIdValidator.cs",
+              "RelativeToolTip": "POS.Services\\Validators\\EcuadorianIdValidator.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAxwC0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:21:28.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DTOs\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "POS.DTOs\\ApiResponse.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.DTOs\\ApiResponse.cs",
+              "RelativeToolTip": "POS.DTOs\\ApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:00:21.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Entities\\Category.cs",
+              "RelativeDocumentMoniker": "POS.Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Entities\\Category.cs",
+              "RelativeToolTip": "POS.Entities\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T01:49:43.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "POS.Entities\\Customer.cs",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Entities\\Customer.cs",
+              "RelativeToolTip": "POS.Entities\\Customer.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAADAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T01:00:51.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "debug-order.js",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\wwwroot\\js\\debug-order.js",
+              "RelativeDocumentMoniker": "POS.Web\\wwwroot\\js\\debug-order.js",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\wwwroot\\js\\debug-order.js",
+              "RelativeToolTip": "POS.Web\\wwwroot\\js\\debug-order.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-09T04:20:09.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "POS.Web\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "POS.Web\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-09T02:43:13.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "POS.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "POS.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-09T02:41:16.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "POS.Web\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\Administrador\\Desktop\\POSSystem\\POSSystem\\POS.Web\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "POS.Web\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-09T02:41:20.269Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

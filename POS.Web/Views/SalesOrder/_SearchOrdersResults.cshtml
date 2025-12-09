@@ -1,0 +1,89 @@
+﻿@model POS.DTOs.SalesOrderSearchDTO
+
+@if (Model.Results == null || !Model.Results.Any())
+{
+    <div class="alert alert-info">
+        <i class="fas fa-info-circle"></i> No se encontraron órdenes de venta
+    </div>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table table-hover table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Número de Orden</th>
+                    <th>Cliente</th>
+                    <th>Fecha de Orden</th>
+                    <th>Monto Total</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model.Results)
+                {
+                    <tr>
+                        <td class="fw-bold">@order.OrderNumber</td>
+                        <td>@order.CustomerName</td>
+                        <td>@order.OrderDate.ToString("dd/MM/yyyy hh:mm tt")</td>
+                        <td class="fw-bold text-success">$@order.TotalAmount.ToString("N2")</td>
+                        <td>
+                            <span class="badge bg-success">@order.Status</span>
+                        </td>
+                        <td>
+                            <a asp-action="Details" asp-route-id="@order.SalesOrderId"
+                               class="btn btn-sm btn-info" target="_blank">
+                                <i class="fas fa-eye"></i> Ver
+                            </a>
+                            <a asp-action="PrintPdf" asp-route-id="@order.SalesOrderId"
+                               class="btn btn-sm btn-warning" target="_blank">
+                                <i class="fas fa-print"></i> Imprimir
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    @* Pagination *@
+    @if (Model.TotalRecords > Model.PageSize)
+    {
+        var totalPages = (int)Math.Ceiling((double)Model.TotalRecords / Model.PageSize);
+        <nav aria-label="Paginación de órdenes">
+            <ul class="pagination justify-content-center">
+                @* Previous button *@
+                <li class="page-item @(Model.PageNumber <= 1 ? "disabled" : "")">
+                    <a class="page-link" href="#"
+                       onclick="searchOrders('@Model.SearchTerm', @(Model.PageNumber - 1)); return false;">
+                        Anterior
+                    </a>
+                </li>
+
+                @* Page numbers *@
+                @for (int i = 1; i <= totalPages; i++)
+                {
+                    <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                        <a class="page-link" href="#"
+                           onclick="searchOrders('@Model.SearchTerm', @i); return false;">
+                            @i
+                        </a>
+                    </li>
+                }
+
+                @* Next button *@
+                <li class="page-item @(Model.PageNumber >= totalPages ? "disabled" : "")">
+                    <a class="page-link" href="#"
+                       onclick="searchOrders('@Model.SearchTerm', @(Model.PageNumber + 1)); return false;">
+                        Siguiente
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="text-center text-muted">
+            <small>Mostrando @Model.Results.Count de @Model.TotalRecords resultados</small>
+        </div>
+    }
+}

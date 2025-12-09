@@ -1,0 +1,166 @@
+﻿@model POS.DTOs.SalesOrderViewModel
+
+@{
+    ViewData["Title"] = "Detalles de Orden de Venta";
+}
+
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                    <h3 class="mb-0">
+                        <i class="fas fa-file-invoice"></i> Detalles de Orden de Venta
+                    </h3>
+                    <div>
+                        <a asp-action="PrintPdf" asp-route-id="@Model.SalesOrderId"
+                           class="btn btn-warning" target="_blank">
+                            <i class="fas fa-print"></i> Imprimir/PDF
+                        </a>
+                        <a asp-action="Search" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left"></i> Volver a Búsqueda
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <i class="fas fa-check-circle"></i> @TempData["SuccessMessage"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    }
+
+                    <!-- Order Information -->
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="card border-primary">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="mb-0">Información de la Orden</h5>
+                                </div>
+                                <div class="card-body">
+                                    <dl class="row mb-0">
+                                        <dt class="col-sm-4">Número de Orden:</dt>
+                                        <dd class="col-sm-8 fw-bold">@Model.OrderNumber</dd>
+
+                                        <dt class="col-sm-4">Fecha de Orden:</dt>
+                                        <dd class="col-sm-8">@Model.OrderDate.ToString("dd 'de' MMMM 'de' yyyy hh:mm tt", new System.Globalization.CultureInfo("es-EC"))</dd>
+
+                                        <dt class="col-sm-4">Estado:</dt>
+                                        <dd class="col-sm-8">
+                                            <span class="badge bg-success">@Model.Status</span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card border-info">
+                                <div class="card-header bg-info text-white">
+                                    <h5 class="mb-0">Información del Cliente</h5>
+                                </div>
+                                <div class="card-body">
+                                    <dl class="row mb-0">
+                                        <dt class="col-sm-4">Cliente:</dt>
+                                        <dd class="col-sm-8 fw-bold">@Model.CustomerName</dd>
+
+                                        <dt class="col-sm-4">Cédula:</dt>
+                                        <dd class="col-sm-8">@Model.CustomerIdentification</dd>
+
+                                        <dt class="col-sm-4">Email:</dt>
+                                        <dd class="col-sm-8">@(Model.CustomerEmail ?? "N/A")</dd>
+
+                                        <dt class="col-sm-4">Teléfono:</dt>
+                                        <dd class="col-sm-8">@(Model.CustomerPhone ?? "N/A")</dd>
+
+                                        <dt class="col-sm-4">Dirección:</dt>
+                                        <dd class="col-sm-8">@(Model.CustomerAddress ?? "N/A")</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Order Items -->
+                    <div class="card mb-4">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="mb-0">Artículos de la Orden</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th style="width: 15%;">Código</th>
+                                            <th style="width: 35%;">Producto</th>
+                                            <th style="width: 15%;" class="text-end">Precio Unit.</th>
+                                            <th style="width: 10%;" class="text-center">Cantidad</th>
+                                            <th style="width: 25%;" class="text-end">Total Línea</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var detail in Model.OrderDetails)
+                                        {
+                                            <tr>
+                                                <td>@detail.ProductCode</td>
+                                                <td>@detail.ProductName</td>
+                                                <td class="text-end">$@detail.UnitPrice.ToString("N2")</td>
+                                                <td class="text-center">
+                                                    <span class="badge bg-primary">@detail.Quantity</span>
+                                                </td>
+                                                <td class="text-end fw-bold">$@detail.LineTotal.ToString("N2")</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Order Totals -->
+                    <div class="row">
+                        <div class="col-md-8">
+                            @if (!string.IsNullOrEmpty(Model.Notes))
+                            {
+                                <div class="card">
+                                    <div class="card-header bg-secondary text-white">
+                                        <h6 class="mb-0">Notas Adicionales</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="mb-0">@Model.Notes</p>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card border-warning">
+                                <div class="card-header bg-warning">
+                                    <h5 class="mb-0">Resumen de Orden</h5>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-sm mb-0">
+                                        <tr>
+                                            <th>Subtotal:</th>
+                                            <td class="text-end fw-bold">$@Model.Subtotal.ToString("N2")</td>
+                                        </tr>
+                                        <tr>
+                                            <th>IVA (15%):</th>
+                                            <td class="text-end fw-bold">$@Model.TaxAmount.ToString("N2")</td>
+                                        </tr>
+                                        <tr class="table-success">
+                                            <th class="fs-5">Total:</th>
+                                            <td class="text-end fw-bold fs-4 text-success">
+                                                $@Model.TotalAmount.ToString("N2")
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
